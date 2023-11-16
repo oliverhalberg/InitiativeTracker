@@ -49,7 +49,6 @@ Log starts at v2.0; no log updates were kept for previous versions.
 
 ## Planned For Future Updates
 - UI tweaks
-- Showing a preview of the next turn (such as with a line of output in the form "Next Turn: \<name\>")
 - Create a `.jar` file containing the project for ease of use.
 - Possibly create a new version of this application in the form of an Android application.
 

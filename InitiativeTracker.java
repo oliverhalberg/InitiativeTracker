@@ -84,6 +84,13 @@ public class InitiativeTracker {
                         System.out.println(tracker.turnorder.get(i));
                         System.out.println("========================================================");
                         i++;
+                        try{
+                            System.out.println("Next turn: " + tracker.turnorder.get(i).getName());
+                        }
+                        catch(IndexOutOfBoundsException e){ //if we've reached the end of the ArrayList, the next turn will be the first one
+                            System.out.println("Next turn: " + tracker.turnorder.get(0).getName());
+                        }
+                        
                     }
                     break;
                 

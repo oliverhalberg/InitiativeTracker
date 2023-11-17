@@ -5,8 +5,8 @@ import java.util.InputMismatchException;
 
 /**
  * A command-line text-based Dungeons and Dragons initiative tracking tool by Oliver Halberg.
- * Version 2.5
- * Last updated: 10/16/23
+ * Version 2.7
+ * Last updated: 11/16/23
  */
 
 public class InitiativeTracker {
@@ -118,6 +118,9 @@ public class InitiativeTracker {
                         else {
                             try {
                                 toRemove = Integer.parseInt(entry);
+                                if(toRemove == (i-1)){
+                                    i--;
+                                }
                                 tracker.turnorder.remove(toRemove);
                                 System.out.println("Removed " + toRemove);
                             } 
@@ -141,7 +144,7 @@ public class InitiativeTracker {
             if (!running) { // if user has quit
                 break;
             }
-
+            
         } // end main loop
         System.out.println("================================================================================");
         scan.close();

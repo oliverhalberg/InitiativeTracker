@@ -1,4 +1,4 @@
-# Initiative Tracker Project v2.5
+# Initiative Tracker Project v2.7
 #### By Oliver Halberg
 
 ## Functionality
@@ -46,6 +46,10 @@ Log starts at v2.0; no log updates were kept for previous versions.
     - Added README.md. Cleaned up code to remove old comments.
 - 10/16/23 **v2.5**
     - Added round counter: application now keeps track of how many rounds of combat have passed since the start of combat.
+- 11/16/23 **v2.6**
+    - Added preview of the next turn when showing the current turn.
+- 11/16/23 **v2.7**
+    - Fixed a bug where removing the current turn would cause the program to skip the following turn.
 
 ## Planned For Future Updates
 - UI tweaks

@@ -3,18 +3,18 @@
 
 ## Functionality
 
-This program provides a text-based command-line tool for tracking rounds of combat in DnD 5e and similar TTRPG systems. 
+This program provides a text-based command-line tool for tracking rounds of combat in DnD 5e and similar TTRPG systems.
 
 ### List of Commands:
 - "**a**" or "**A**": Adds a turn to the tracker.
-- "**n**" or "**N**": Displays the next turn in the initiative order. Increases the round counter if the next turn is the beginning of a new round. 
+- "**n**" or "**N**": Moves to and displays the next turn in the initiative order. Increases the round counter if the new turn is the beginning of a new round. A preview of the following turn is also displayed.
 - "**s**" or "**S**": Displays a list of all turns, sorted by initiative (greatest to smallest). This does not change the current turn.
 - "**r**" or "**R**": Removes a turn from the tracker.
 - "**q**" or "**Q**": Quits the application.
 
 All other inputs, including invalid inputs given while adding or removing a program, will result in the user being prompted to enter the input again until a valid input is provided.
 
-Each turn has an initiative count and a name associated with it. 
+Each turn has an initiative count and a name associated with it.
 
 ### Adding Turns
 
@@ -22,7 +22,7 @@ Typing "**a**" or "**A**" opens the **Add Turn** menu. This prompts the user for
 
 ### Removing Turns
 
-Typing "**r**" or "**R**" opens the **Remove Turn** menu. This displays a sorted list of all of the turns in the iniative order, each with an associated number starting at 0. The user is then prompted to select a turn to remove by typing in its associated number. Once that has been provided, the turn will be removed from the list and the program will return to the main menu.
+Typing "**r**" or "**R**" opens the **Remove Turn** menu. This displays a sorted list of all of the turns in the initiative order, each with an associated number starting at 0. The user is then prompted to select a turn to remove by typing in its associated number. Once that has been provided, the turn will be removed from the list and the program will return to the main menu.
 
 ## How to Run the Application
 
@@ -34,13 +34,13 @@ This program was written on a machine running Java 17.0. Some features may not w
 
 Log starts at v2.0; no log updates were kept for previous versions.
 
-- 9/17/23 **v2.0** 
+- 9/17/23 **v2.0**
     - Restructured code from v1.2 to allow for adding and deleting turns within same loop/better overall workflow
-- 9/17/23 **v2.1** 
+- 9/17/23 **v2.1**
     - Added case insensitivity to user inputs. Added this changelog.
-- 9/18/23 **v2.2** 
+- 9/18/23 **v2.2**
     - Restructured some code to use methods on the InitiativeTracker object; project functionality unchanged.
-- 9/18/23 **v2.3** 
+- 9/18/23 **v2.3**
     - Added cosmetic strings to outputs to make them look nicer.
 - 10/15/23 **v2.4**
     - Added README.md. Cleaned up code to remove old comments.

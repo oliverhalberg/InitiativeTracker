@@ -20,13 +20,13 @@ Each turn has an initiative count and a name associated with it.
 
 Typing "**a**" or "**A**" opens the **Add Turn** menu. This prompts the user for an initiative count (an integer) and a name for the turn (a string of text). Once the information has been provided, the turn will be added to the initiative order and the program will return to the main menu.
 
+Currently, resolving turns that occur on the same initiative count is left to the user. 
+
 ### Removing Turns
 
 Typing "**r**" or "**R**" opens the **Remove Turn** menu. This displays a sorted list of all of the turns in the initiative order, each with an associated number starting at 0. The user is then prompted to select a turn to remove by typing in its associated number. Once that has been provided, the turn will be removed from the list and the program will return to the main menu.
 
-### A Note:
 
-Currently, resolving turns that occur on the same initiative count is left to the user. 
 
 ## How to Run the Application
 

@@ -24,6 +24,10 @@ Typing "**a**" or "**A**" opens the **Add Turn** menu. This prompts the user for
 
 Typing "**r**" or "**R**" opens the **Remove Turn** menu. This displays a sorted list of all of the turns in the initiative order, each with an associated number starting at 0. The user is then prompted to select a turn to remove by typing in its associated number. Once that has been provided, the turn will be removed from the list and the program will return to the main menu.
 
+### A Note:
+
+Currently, resolving turns that occur on the same initiative count is left to the user. 
+
 ## How to Run the Application
 
 Currently, the application consists of the Java files `InitiativeTracker.java` and `Turn.java`. It can be run from the command line by compiling both files and running the command `java InitiativeTracker.java` in the project's directory on a machine with Java installed.

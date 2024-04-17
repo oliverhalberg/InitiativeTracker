@@ -41,7 +41,7 @@ public class InitiativeTracker {
         // Print welcome message
         System.out.println("================================================================================");
         System.out.println("\tWelcome to Initiative Tracker!");
-        System.out.println("\tAuthor: Oliver Halberg \n\tVersion 2.5");
+        System.out.println("\tAuthor: Oliver Halberg \n\tVersion 2.7");
         System.out.println();
 
         while (running) { // main loop

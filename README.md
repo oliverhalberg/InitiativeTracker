@@ -12,7 +12,7 @@ This program provides a text-based command-line tool for tracking rounds of comb
 - "**r**" or "**R**": Removes a turn from the tracker.
 - "**q**" or "**Q**": Quits the application.
 
-All other inputs, including invalid inputs given while adding or removing a program, will result in the user being prompted to enter the input again until a valid input is provided.
+All other inputs, including invalid inputs given while adding or removing a turn, will result in the user being prompted to enter the input again until a valid input is provided.
 
 Each turn has an initiative count and a name associated with it.
 

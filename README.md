@@ -1,6 +1,9 @@
 # Initiative Tracker Project v2.7
 #### By Oliver Halberg
 
+### Known issues:
+- if you add a turn with an initiative count higher than that of the current turn, the program will skip a turn due to an off-by-one error.
+
 ## Functionality
 
 This program provides a text-based command-line tool for tracking rounds of combat in DnD 5e and similar TTRPG systems.

@@ -4,7 +4,8 @@ import java.util.Collections;
 import java.util.InputMismatchException;
 
 /**
- * A command-line text-based Dungeons and Dragons initiative tracking tool by Oliver Halberg.
+ * A command-line text-based Dungeons and Dragons initiative tracking tool by
+ * Oliver Halberg.
  * Version 2.7
  * Last updated: 11/16/23
  */
@@ -12,19 +13,19 @@ import java.util.InputMismatchException;
 public class InitiativeTracker {
     private ArrayList<Turn> turnorder = new ArrayList<Turn>(); // list of Turn objects to track the initiative order
 
-    private int roundCount = 1; // variable to track rounds of combat; initialized at 1 to signify the first round
+    private int roundCount = 1; // variable to track rounds of combat; initialized at 1 to signify the first
+                                // round
 
     public void showAllTurns(){
-        if (this.turnorder.size() <= 0) {
-                        System.out.println("No turns detected.");
-                    } 
-                    else {
-                        System.out.println("===================== Turn Order =======================");
-                        for (int k = 0; k < this.turnorder.size(); k++) {
-                            System.out.println(this.turnorder.get(k));
-                        }
-                        System.out.println("========================================================");
-                    }
+        if(this.turnorder.size() <= 0){
+            System.out.println("No turns detected.");
+        } else {
+            System.out.println("===================== Turn Order =======================");
+            for (int k = 0; k < this.turnorder.size(); k++) {
+                System.out.println(this.turnorder.get(k));
+            }
+            System.out.println("========================================================");
+        }
     }
 
     public static void main(String[] args) {
@@ -90,10 +91,8 @@ public class InitiativeTracker {
                         catch(IndexOutOfBoundsException e){ //if we've reached the end of the ArrayList, the next turn will be the first one
                             System.out.println("Next turn: " + tracker.turnorder.get(0).getName());
                         }
-                        
                     }
                     break;
-                
                 case "S":
                 case "s":
                     tracker.showAllTurns();
@@ -144,7 +143,6 @@ public class InitiativeTracker {
             if (!running) { // if user has quit
                 break;
             }
-            
         } // end main loop
         System.out.println("================================================================================");
         scan.close();
